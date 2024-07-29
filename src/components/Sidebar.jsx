@@ -15,7 +15,7 @@ const Sidebar = () => {
         LinkName="Products categories"
         linkAddress="/products_categories"
       />
-      <Sidebarfields LinkName="Companies" linkAddress="/" />
+      <Sidebarfields LinkName="Companies" linkAddress="/companies" />
       <Sidebarfields LinkName="Expenses" linkAddress="/" />
       <Sidebarfields LinkName="Expenses categories" linkAddress="/" />
       <Sidebarfields LinkName="Sales" linkAddress="/" />
