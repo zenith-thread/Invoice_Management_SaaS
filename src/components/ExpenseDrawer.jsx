@@ -19,7 +19,7 @@ import {
 
 import { useRef } from "react";
 
-const ProductDrawer = ({ Icon, label }) => {
+const ExpenseDrawer = ({ Icon, label }) => {
   const { isOpen, onOpen, onClose } = useDisclosure();
   const firstField = useRef();
 
@@ -54,7 +54,7 @@ const ProductDrawer = ({ Icon, label }) => {
             fontWeight="bold"
             py="30px"
           >
-            Product
+            Expense
           </DrawerHeader>
 
           <DrawerBody>
@@ -71,7 +71,7 @@ const ProductDrawer = ({ Icon, label }) => {
                 <Input
                   ref={firstField}
                   id="username"
-                  placeholder="Enter Product Name"
+                  placeholder="Enter Expense Name"
                 />
               </Box>
 
@@ -82,7 +82,7 @@ const ProductDrawer = ({ Icon, label }) => {
                   fontWeight="bold"
                   py="10px"
                 >
-                  Product Category
+                  Expense Category
                 </FormLabel>
                 <Select
                   id="owner"
@@ -109,6 +109,18 @@ const ProductDrawer = ({ Icon, label }) => {
                   <option value="segun">$ (US DOLLAR)</option>
                   <option value="kola">€ (Euro)</option>
                 </Select>
+              </Box>
+
+              <Box>
+                <FormLabel
+                  htmlFor="username"
+                  fontSize="sm"
+                  fontWeight="bold"
+                  py="10px"
+                >
+                  Total
+                </FormLabel>
+                <Input ref={firstField} id="username" />
               </Box>
 
               <Box>
@@ -156,4 +168,4 @@ const ProductDrawer = ({ Icon, label }) => {
   );
 };
 
-export default ProductDrawer;
+export default ExpenseDrawer;

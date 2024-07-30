@@ -10,6 +10,7 @@ import Delivery_Challan from "./pages/Delivery_Challan/Delivery_Challan";
 import Products from "./pages/Products/Products";
 import Products_Categories from "./pages/Products_Categories/Products_Categories";
 import Companies from "./pages/Companies/Companies";
+import Expenses from "./pages/Expenses/Expenses";
 
 const App = () => {
   return (
@@ -21,8 +22,16 @@ const App = () => {
         <Route path="invoices" element={<Invoices />} />
         <Route path="delivery_challan" element={<Delivery_Challan />} />
         <Route path="products" element={<Products />} />
-        <Route path="products_categories" element={<Products_Categories />} />
+        <Route
+          path="products_categories"
+          element={<Products_Categories label="Product" />}
+        />
         <Route path="companies" element={<Companies />} />
+        <Route path="expenses" element={<Expenses />} />
+        <Route
+          path="expense_categories"
+          element={<Products_Categories label="Expense" />}
+        />
       </Route>
     </Routes>
   );

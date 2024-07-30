@@ -37,7 +37,7 @@ const CategoryDrawer = ({ Icon, label }) => {
         }}
         fontSize="sm"
       >
-        {label}
+        Add New {label} Category
       </Button>
       <Drawer
         isOpen={isOpen}
@@ -55,7 +55,7 @@ const CategoryDrawer = ({ Icon, label }) => {
             fontWeight="bold"
             py="30px"
           >
-            Product Category
+            {label} Category
           </DrawerHeader>
 
           <DrawerBody>
@@ -72,7 +72,7 @@ const CategoryDrawer = ({ Icon, label }) => {
                 <Input
                   ref={firstField}
                   id="username"
-                  placeholder="Enter Product Category Name"
+                  placeholder={`Enter ${label} Category Name`}
                 />
               </Box>
 

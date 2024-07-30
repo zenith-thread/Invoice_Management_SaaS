@@ -16,8 +16,11 @@ const Sidebar = () => {
         linkAddress="/products_categories"
       />
       <Sidebarfields LinkName="Companies" linkAddress="/companies" />
-      <Sidebarfields LinkName="Expenses" linkAddress="/" />
-      <Sidebarfields LinkName="Expenses categories" linkAddress="/" />
+      <Sidebarfields LinkName="Expenses" linkAddress="/expenses" />
+      <Sidebarfields
+        LinkName="Expenses categories"
+        linkAddress="/expense_categories"
+      />
       <Sidebarfields LinkName="Sales" linkAddress="/" />
       <Sidebarfields LinkName="Profile" linkAddress="/" />
       <Sidebarfields LinkName="Reports" linkAddress="/" />
