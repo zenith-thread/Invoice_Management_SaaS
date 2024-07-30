@@ -8,8 +8,8 @@ import {
   MenuItem,
   MenuGroup,
   MenuDivider,
+  Avatar,
 } from "@chakra-ui/react";
-import { Avatar, AvatarBadge, AvatarGroup } from "@chakra-ui/react";
 
 // react icons
 import { BsPerson } from "react-icons/bs";
@@ -61,11 +61,11 @@ const AvatarMenu = () => {
               </div>
             </MenuItem>
           </NavLink>
-          <NavLink>
+          <NavLink to="/settings">
             <MenuItem>
               <div className="flex items-center gap-2 text-sm font-semibold py-1">
                 <IoSettingsOutline className="font-semibold" />
-                <p>App Settings</p>
+                <p>Settings</p>
               </div>
             </MenuItem>
           </NavLink>

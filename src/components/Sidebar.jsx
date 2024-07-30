@@ -2,7 +2,7 @@ import Sidebarfields from "./Sidebarfields";
 
 const Sidebar = () => {
   return (
-    <div className="flex flex-col w-[300px] p-5 mt-[20px]">
+    <div className="flex flex-col w-[300px] p-5 mt-[20px] bg-transparent">
       <Sidebarfields LinkName="Dashboard" linkAddress="/" />
       <Sidebarfields LinkName="Quotations" linkAddress="/quotations" />
       <Sidebarfields LinkName="Invoices" linkAddress="/invoices" />
@@ -25,7 +25,8 @@ const Sidebar = () => {
       <Sidebarfields LinkName="Employees" linkAddress="/employees" />
       <Sidebarfields LinkName="Taxes" linkAddress="/taxes" />
       <Sidebarfields LinkName="Reports" linkAddress="/" />
-      <Sidebarfields LinkName="Settings" linkAddress="/" />
+      <Sidebarfields LinkName="Currencies" linkAddress="/currencies" />
+      <Sidebarfields LinkName="Settings" linkAddress="/settings" />
     </div>
   );
 };

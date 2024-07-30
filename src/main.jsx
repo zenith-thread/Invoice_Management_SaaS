@@ -14,7 +14,15 @@ const config = {
   useSystemColorMode: false,
 };
 
-const theme = extendTheme({ config });
+const styles = {
+  global: {
+    body: {
+      bg: "#F9FAFC",
+    },
+  },
+};
+
+const theme = extendTheme({ config, styles });
 
 ReactDOM.createRoot(document.getElementById("root")).render(
   <React.StrictMode>

@@ -13,6 +13,13 @@ import Companies from "./pages/Companies/Companies";
 import Expenses from "./pages/Expenses/Expenses";
 import Employees from "./pages/Employees/Employees";
 import Taxes from "./pages/Taxes/Taxes";
+import Settings from "./pages/Settings/Settings";
+import Currencies from "./pages/Currencies/Currencies";
+
+// Sub pages
+import CompanySettings from "./pages/Settings/CompanySettings/CompanySettings";
+import CompanyLogoSettings from "./pages/Settings/CompanyLogoSettings/CompanyLogoSettings";
+import CurrencySettings from "./pages/Settings/CurrencySettings/CurrencySettings";
 
 const App = () => {
   return (
@@ -36,6 +43,12 @@ const App = () => {
         />
         <Route path="employees" element={<Employees />} />
         <Route path="taxes" element={<Taxes />} />
+        <Route path="currencies" element={<Currencies />} />
+        <Route path="settings" element={<Settings />}>
+          <Route index element={<CompanySettings />} />
+          <Route path="logo" element={<CompanyLogoSettings />} />
+          <Route path="currency" element={<CurrencySettings />} />
+        </Route>
       </Route>
     </Routes>
   );
