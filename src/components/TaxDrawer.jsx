@@ -19,7 +19,7 @@ import {
 
 import { useRef } from "react";
 
-const EmployeeDrawer = ({ Icon, label }) => {
+const TaxDrawer = ({ Icon, label }) => {
   const { isOpen, onOpen, onClose } = useDisclosure();
   const firstField = useRef();
 
@@ -54,7 +54,7 @@ const EmployeeDrawer = ({ Icon, label }) => {
             fontWeight="bold"
             py="30px"
           >
-            Employee
+            Taxes
           </DrawerHeader>
 
           <DrawerBody>
@@ -66,49 +66,32 @@ const EmployeeDrawer = ({ Icon, label }) => {
                   fontWeight="bold"
                   pt="20px"
                 >
-                  First Name
+                  Name
                 </FormLabel>
                 <Input ref={firstField} id="username" />
               </Box>
 
               <Box>
                 <FormLabel htmlFor="username" fontSize="sm" fontWeight="bold">
-                  Last Name
+                  Value
                 </FormLabel>
                 <Input ref={firstField} id="username" />
               </Box>
 
-              <Box>
-                <FormLabel htmlFor="username" fontSize="sm" fontWeight="bold">
-                  Email
-                </FormLabel>
-                <Input ref={firstField} id="username" type="email" />
-              </Box>
-
-              <Box>
-                <FormLabel htmlFor="username" fontSize="sm" fontWeight="bold">
-                  Password
-                </FormLabel>
-                <Input ref={firstField} id="username" type="password" />
-              </Box>
-
-              <Box>
-                <FormLabel htmlFor="owner" fontSize="sm" fontWeight="bold">
-                  Role
-                </FormLabel>
-                <Select id="owner" defaultValue="segun">
-                  <option value="segun">Admin</option>
-                  <option value="kola">Employee</option>
-                  <option value="kola">Read Only</option>
-                </Select>
-              </Box>
-
-              <Box>
-                <FormLabel htmlFor="owner" fontSize="sm" fontWeight="bold">
-                  Enabled
-                </FormLabel>
-                <Switch size="lg" />
-              </Box>
+              <div className="flex gap-[130px] items-center">
+                <Box>
+                  <FormLabel htmlFor="owner" fontSize="sm" fontWeight="bold">
+                    Enabled
+                  </FormLabel>
+                  <Switch size="lg" />
+                </Box>
+                <Box>
+                  <FormLabel htmlFor="owner" fontSize="sm" fontWeight="bold">
+                    Default
+                  </FormLabel>
+                  <Switch size="lg" />
+                </Box>
+              </div>
             </Stack>
           </DrawerBody>
 
@@ -143,4 +126,4 @@ const EmployeeDrawer = ({ Icon, label }) => {
   );
 };
 
-export default EmployeeDrawer;
+export default TaxDrawer;

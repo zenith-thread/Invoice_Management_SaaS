@@ -12,6 +12,7 @@ import Products_Categories from "./pages/Products_Categories/Products_Categories
 import Companies from "./pages/Companies/Companies";
 import Expenses from "./pages/Expenses/Expenses";
 import Employees from "./pages/Employees/Employees";
+import Taxes from "./pages/Taxes/Taxes";
 
 const App = () => {
   return (
@@ -34,6 +35,7 @@ const App = () => {
           element={<Products_Categories label="Expense" />}
         />
         <Route path="employees" element={<Employees />} />
+        <Route path="taxes" element={<Taxes />} />
       </Route>
     </Routes>
   );

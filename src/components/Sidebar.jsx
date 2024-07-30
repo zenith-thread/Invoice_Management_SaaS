@@ -23,6 +23,7 @@ const Sidebar = () => {
       />
       <Sidebarfields LinkName="Sales" linkAddress="/" />
       <Sidebarfields LinkName="Employees" linkAddress="/employees" />
+      <Sidebarfields LinkName="Taxes" linkAddress="/taxes" />
       <Sidebarfields LinkName="Reports" linkAddress="/" />
       <Sidebarfields LinkName="Settings" linkAddress="/" />
     </div>
