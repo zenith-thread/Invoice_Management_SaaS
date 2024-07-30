@@ -8,7 +8,7 @@ import { SlReload } from "react-icons/sl";
 
 const Invoices = () => {
   return (
-    <div className="relative overflow-x-auto max-w-[1600px] flex flex-col col-span-2 h-[768px] py-4 mr-[75px] ml-[10px] mt-[20px] bg-white border border-white rounded-md transition ease-in-out delay-150 shadow-2xl hover:shadow-xl shadow-hoverShadow hover:shadow-hoverShadow">
+    <div className="relative overflow-x-auto max-w-[1535px] flex flex-col col-span-2 h-[768px] py-4 ml-[10px] mt-[20px] bg-white border border-white rounded-md transition ease-in-out delay-150 shadow-2xl hover:shadow-xl shadow-hoverShadow hover:shadow-hoverShadow">
       <div className="sticky left-0 flex justify-between items-center mb-2 p-8 pr-4">
         <div className="flex justfiy-center items-center gap-2">
           <BackButton />
@@ -23,7 +23,6 @@ const Invoices = () => {
           <Button icon={<SlReload />} inverted>
             Refresh
           </Button>
-          <Button icon={<FaPlus />}>Create new invoice</Button>
         </div>
       </div>
       <table>
@@ -36,25 +35,26 @@ const Invoices = () => {
             <th className="sticky left-[90px] z-10 min-w-[75px] max-w-[75px]  text-center bg-[#FAFAFA] pt-3 pb-5  text-sm font-bold text-gray-600">
               Inv #
             </th>
-            <th className="sticky z-10 left-[165px] min-w-[100px] max-w-[100px]  text-center bg-[#FAFAFA] pt-3 pb-5  text-sm font-bold text-gray-600">
-              Date
-            </th>
-            <th className="sticky z-10 left-[265px] min-w-[150px] max-w-[150px]  text-center bg-[#FAFAFA] pt-3 pb-5  text-sm font-bold text-gray-600">
+            <th className="sticky z-10 left-[165px] min-w-[150px] max-w-[150px]  text-center bg-[#FAFAFA] pt-3 pb-5  text-sm font-bold text-gray-600">
               Invoice
             </th>
-            <th className="sticky z-10 left-[415px] min-w-[75px] max-w-[75px]  text-center bg-[#FAFAFA] pt-3 pb-5  text-sm font-bold text-gray-600">
+            <th className="sticky z-10 left-[315px] min-w-[75px] max-w-[75px]  text-center bg-[#FAFAFA] pt-3 pb-5  text-sm font-bold text-gray-600">
               Status
             </th>
-            <th className="sticky z-10 left-[490px] min-w-[75px] max-w-[75px]  text-center bg-[#FAFAFA] pt-3 pb-5  text-sm font-bold text-gray-600">
+            <th className="sticky z-10 left-[390px] min-w-[75px] max-w-[75px]  text-center bg-[#FAFAFA] pt-3 pb-5  text-sm font-bold text-gray-600">
               HS Code
             </th>
-            <th className="sticky z-10 left-[565px] min-w-[150px] max-w-[150px]  text-center bg-[#FAFAFA] pt-3 pb-5  text-sm font-bold text-gray-600">
+            <th className="sticky z-10 left-[465px] min-w-[150px] max-w-[150px]  text-center bg-[#FAFAFA] pt-3 pb-5  text-sm font-bold text-gray-600">
               Customer
             </th>
-            <th className="sticky z-10 left-[715px] min-w-[200px] max-w-[200px]  text-center bg-[#FAFAFA] pt-3 pb-5  text-sm font-bold text-gray-600">
+
+            {/* NON STICKY COLUMNS */}
+            <th className="min-w-[100px] max-w-[100px] text-center bg-[#FAFAFA] pt-3 pb-5  text-sm font-bold text-gray-600">
+              Date
+            </th>
+            <th className="min-w-[250px] max-w-[250px] text-center bg-[#FAFAFA] pt-3 pb-5  text-sm font-bold text-gray-600">
               Description
             </th>
-            {/* NON STICKY COLUMNS */}
             <th className="min-w-[150px] max-w-[150px] text-center bg-[#FAFAFA] pt-3 pb-5  text-sm font-bold text-gray-600">
               Inv Amount
             </th>
