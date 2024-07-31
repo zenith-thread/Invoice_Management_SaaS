@@ -13,6 +13,7 @@ import {
   FormLabel,
   Select,
   Input,
+  Textarea,
   useDisclosure,
   Switch,
 } from "@chakra-ui/react";
@@ -90,6 +91,13 @@ const EmployeeDrawer = ({ Icon, label }) => {
                   Password
                 </FormLabel>
                 <Input ref={firstField} id="username" type="password" />
+              </Box>
+
+              <Box>
+                <FormLabel htmlFor="username" fontSize="sm" fontWeight="bold">
+                  Description
+                </FormLabel>
+                <Textarea ref={firstField} id="username" type="password" />
               </Box>
 
               <Box>

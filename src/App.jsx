@@ -15,11 +15,16 @@ import Employees from "./pages/Employees/Employees";
 import Taxes from "./pages/Taxes/Taxes";
 import Settings from "./pages/Settings/Settings";
 import Currencies from "./pages/Currencies/Currencies";
+import Profile from "./pages/Profile/Profile";
 
 // Sub pages
+// Settings
 import CompanySettings from "./pages/Settings/CompanySettings/CompanySettings";
 import CompanyLogoSettings from "./pages/Settings/CompanyLogoSettings/CompanyLogoSettings";
 import CurrencySettings from "./pages/Settings/CurrencySettings/CurrencySettings";
+
+// Profile
+import EditProfile from "./pages/Profile/EditProfile";
 
 const App = () => {
   return (
@@ -48,6 +53,9 @@ const App = () => {
           <Route index element={<CompanySettings />} />
           <Route path="logo" element={<CompanyLogoSettings />} />
           <Route path="currency" element={<CurrencySettings />} />
+        </Route>
+        <Route path="profile" element={<Profile />}>
+          <Route path="edit" element={<EditProfile />} />
         </Route>
       </Route>
     </Routes>

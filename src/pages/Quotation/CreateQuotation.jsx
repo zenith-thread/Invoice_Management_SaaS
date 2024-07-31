@@ -1,5 +1,5 @@
 // general components
-import Button from "../../components/Button";
+import CustomButton from "../../components/CustomButton";
 import BackButton from "../../components/BackButton";
 
 // react icons
@@ -29,10 +29,10 @@ const CreateQuotation = () => {
           </span>
         </div>
         <div className="flex gap-2">
-          <Button icon={<ImCancelCircle />} inverted>
+          <CustomButton icon={<ImCancelCircle />} inverted>
             Cancel
-          </Button>
-          <Button icon={<FaPlus />}>Save</Button>
+          </CustomButton>
+          <CustomButton icon={<FaPlus />}>Save</CustomButton>
         </div>
       </div>
 
@@ -237,7 +237,7 @@ const CreateQuotation = () => {
       {/* ================ */}
 
       <div className="grid grid-cols-2">
-        <Button icon={<FaPlus />}>Save</Button>
+        <CustomButton icon={<FaPlus />}>Save</CustomButton>
 
         <div className="flex flex-col gap-3">
           <div className="flex flex-col bg-gray-50 rounded-lg">

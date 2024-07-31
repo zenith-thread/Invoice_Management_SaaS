@@ -8,10 +8,7 @@ const SettingsSidebar = () => {
           Settings
         </div>
         <div className="bg-white flex flex-col w-[300px] p-5 mt-[20px] font-bold text-primaryText border border-white rounded-md transition ease-in-out delay-150 shadow-2xl hover:shadow-xl shadow-hoverShadow hover:shadow-hoverShadow">
-          <Sidebarfields
-            LinkName="Company Settings"
-            linkAddress="/settings/company"
-          />
+          <Sidebarfields LinkName="Company Settings" linkAddress="/settings" />
           <Sidebarfields LinkName="Company Logo" linkAddress="/settings/logo" />
           <Sidebarfields
             LinkName="Curreny Settings"

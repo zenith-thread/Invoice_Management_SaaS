@@ -13,9 +13,8 @@ const CompanySettingsForm = () => {
 
         <div className="flex items-center py-[15px]">
           <label className="w-[300px]">Company Address:</label>
-          <input
+          <textarea
             className="px-2 py-[5px] w-[350px] outline-none rounded-lg border border-gray-300 hover:border-primaryBtn transition delay-75 ease-in-out focus:border-primaryBtn shadow-sm"
-            type="text"
             value="House # 2127A, I-10/1 Service Road, Parallel to IJP Road"
           />
         </div>

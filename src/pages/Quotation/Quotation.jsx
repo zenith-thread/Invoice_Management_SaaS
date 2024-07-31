@@ -2,7 +2,7 @@
 import { Link } from "react-router-dom";
 
 // general components
-import Button from "../../components/Button";
+import CustomButton from "../../components/CustomButton";
 import BackButton from "../../components/BackButton";
 
 // react icons
@@ -23,11 +23,11 @@ const Quotation = () => {
             className="px-3 py-1 border border-primaryBorder hover:border-primaryBtn focus:outline-none focus:border-primaryBtn rounded-r-lg text-sm font-semibold focus:shadow-sm focus:shadow-[#becdfa] transition ease-in-out delay-75"
             placeholder="search"
           />
-          <Button icon={<SlReload />} inverted>
+          <CustomButton icon={<SlReload />} inverted>
             Refresh
-          </Button>
+          </CustomButton>
           <Link to="/quotations/create">
-            <Button icon={<FaPlus />}>Create New Quotation</Button>
+            <CustomButton icon={<FaPlus />}>Create New Quotation</CustomButton>
           </Link>
         </div>
       </div>

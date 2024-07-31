@@ -53,7 +53,7 @@ const AvatarMenu = () => {
         </MenuGroup>
         <MenuDivider />
         <MenuGroup>
-          <NavLink>
+          <NavLink to="/profile">
             <MenuItem>
               <div className="flex items-center gap-2 text-sm font-semibold py-1">
                 <BsPerson className="font-semibold" />

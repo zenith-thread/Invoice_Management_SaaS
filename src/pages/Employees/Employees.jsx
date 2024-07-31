@@ -1,5 +1,5 @@
 // general components
-import Button from "../../components/Button";
+import CustomButton from "../../components/CustomButton";
 import BackButton from "../../components/BackButton";
 
 // react icons
@@ -24,28 +24,31 @@ const Employees = () => {
             className="px-3 py-1 border border-primaryBorder hover:border-primaryBtn focus:outline-none focus:border-primaryBtn rounded-lg text-sm font-semibold focus:shadow-sm focus:shadow-[#becdfa] transition ease-in-out delay-75"
             placeholder="search"
           />
-          <Button icon={<SlReload />} inverted>
+          <CustomButton icon={<SlReload />} inverted>
             Refresh
-          </Button>
+          </CustomButton>
           <EmployeeDrawer Icon={<FaPlus />} label="Add New Employee" />
         </div>
       </div>
       <table className="mx-4 border-b border-[#F0F0F0] mb-[75px] ">
         <thead>
           <tr>
-            <th className="bg-[#FAFAFA] w-[15%] pt-3 pb-5 px-4 border-r border-[#F0F0F0] rounded text-left text-sm font-semibold text-gray-600">
+            <th className="bg-[#FAFAFA] w-[13%] pt-3 pb-5 px-4 border-r border-[#F0F0F0] rounded text-left text-sm font-semibold text-gray-600">
               First Name
             </th>
-            <th className="bg-[#FAFAFA] w-[15%] pt-3 pb-5 px-4 border-r border-[#F0F0F0] rounded text-left text-sm font-semibold text-gray-600">
+            <th className="bg-[#FAFAFA] w-[13%] pt-3 pb-5 px-4 border-r border-[#F0F0F0] rounded text-left text-sm font-semibold text-gray-600">
               Last Name
             </th>
-            <th className="bg-[#FAFAFA] w-[30%] pt-3 pb-5 px-4 border-r border-[#F0F0F0] rounded text-left text-sm font-semibold text-gray-600">
+            <th className="bg-[#FAFAFA] w-[13%] pt-3 pb-5 px-4 border-r border-[#F0F0F0] rounded text-left text-sm font-semibold text-gray-600">
               Email
             </th>
-            <th className="bg-[#FAFAFA] w-[15%] pt-3 pb-5 px-4 border-r border-[#F0F0F0] rounded text-left text-sm font-semibold text-gray-600">
+            <th className="bg-[#FAFAFA] w-[30%] pt-3 pb-5 px-4 border-r border-[#F0F0F0] rounded text-left text-sm font-semibold text-gray-600">
+              Description
+            </th>
+            <th className="bg-[#FAFAFA] w-[13%] pt-3 pb-5 px-4 border-r border-[#F0F0F0] rounded text-left text-sm font-semibold text-gray-600">
               Role
             </th>
-            <th className="bg-[#FAFAFA] w-[15%] pt-3 pb-5 px-4 border-r border-[#F0F0F0] rounded text-left text-sm font-semibold text-gray-600">
+            <th className="bg-[#FAFAFA] w-[13%] pt-3 pb-5 px-4 border-r border-[#F0F0F0] rounded text-left text-sm font-semibold text-gray-600">
               Enabled
             </th>
             <th className="bg-[#FAFAFA] w-[10%] pt-3 pb-5 px-4 border-r border-[#F0F0F0] rounded text-left text-sm font-semibold text-gray-600"></th>

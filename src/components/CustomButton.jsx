@@ -1,4 +1,4 @@
-const Button = ({ onClick, inverted, icon, children }) => {
+const CustomButton = ({ onClick, inverted, icon, children }) => {
   const colorClasses = {
     primary: "bg-primaryBtn text-white hover:opacity-80",
     secondary:
@@ -18,4 +18,4 @@ const Button = ({ onClick, inverted, icon, children }) => {
   );
 };
 
-export default Button;
+export default CustomButton;

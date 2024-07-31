@@ -1,4 +1,4 @@
-import Button from "../../../components/Button";
+import CustomButton from "../../../components/CustomButton";
 
 import { useNavigate } from "react-router-dom";
 
@@ -40,7 +40,7 @@ const CurrencySettings = () => {
 
       <div className="border-b w-[93%] mb-[30px] mt-[10px] border-primaryBorder self-center" />
       <div className="px-[40px] pb-[70px]">
-        <Button>Save</Button>
+        <CustomButton>Save</CustomButton>
       </div>
     </div>
   );

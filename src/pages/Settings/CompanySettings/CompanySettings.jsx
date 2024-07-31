@@ -1,6 +1,6 @@
 import CompanySettingsForm from "./CompanySettingsForm";
 
-import Button from "../../../components/Button";
+import CustomButton from "../../../components/CustomButton";
 
 const CompanySettings = () => {
   return (
@@ -18,7 +18,7 @@ const CompanySettings = () => {
       <CompanySettingsForm />
       <div className="border-b w-[93%] mb-[30px] mt-[10px] border-primaryBorder self-center" />
       <div className="px-[40px] pb-[70px]">
-        <Button>Save</Button>
+        <CustomButton>Save</CustomButton>
       </div>
     </div>
   );
