@@ -1,13 +1,17 @@
 import CustomButton from "../../../components/CustomButton";
+import BackButton from "../../../components/BackButton";
 
 import { FiUpload } from "react-icons/fi";
 
 const CompanyLogoSettings = () => {
   return (
     <div className="flex flex-col bg-white ml-[110px] w-[89%] mt-[17px] border-white rounded-md transition ease-in-out delay-150 shadow-2xl hover:shadow-xl shadow-hoverShadow hover:shadow-hoverShadow">
-      <h2 className="px-[40px] py-[60px] text-primaryText font-semibold text-xl">
-        General Settings
-      </h2>
+      <div className="flex gap-2 px-[40px] py-[60px] text-primaryText font-semibold text-xl">
+        <div className="mt-[-1px]">
+          <BackButton />
+        </div>
+        <h2>General Settings</h2>
+      </div>
       <div className="border-b w-[93%] border-primaryBorder self-center" />
       <h2 className="px-[40px] pt-[60px] text-primaryText font-semibold text-xl">
         Company Logo
