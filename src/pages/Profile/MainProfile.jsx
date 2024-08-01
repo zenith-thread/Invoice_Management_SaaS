@@ -53,6 +53,7 @@ const MainProfile = ({ renderEdit, renderUpdatePassword }) => {
           src="https://media.sproutsocial.com/uploads/2022/06/profile-picture.jpeg"
           alt="profile picture"
           className="object-cover w-[650px] translate-x-[15px] translate-y-[-18px] rounded-lg shadow-xl shadow-gray-400"
+          loading="lazy"
         />
       </motion.div>
     </div>

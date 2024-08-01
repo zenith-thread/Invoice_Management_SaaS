@@ -1,4 +1,3 @@
-import { LazyLoadImage } from "react-lazy-load-image-component";
 import { NavLink } from "react-router-dom";
 
 // chakraUI components

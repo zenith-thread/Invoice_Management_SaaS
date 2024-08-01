@@ -1,9 +1,10 @@
 import { Suspense, lazy } from "react";
 import { Routes, Route } from "react-router-dom";
 
+import Layout from "./pages/Layout/Layout";
+import Dashboard from "./pages/Dashboard/Dashboard";
+
 // Lazy load pages
-const Layout = lazy(() => import("./pages/Layout/Layout"));
-const Dashboard = lazy(() => import("./pages/Dashboard/Dashboard"));
 const Quotation = lazy(() => import("./pages/Quotation/Quotation"));
 const CreateQuotation = lazy(() => import("./pages/Quotation/CreateQuotation"));
 const Invoices = lazy(() => import("./pages/Invoices/Invoices"));
@@ -33,11 +34,13 @@ const CurrencySettings = lazy(() =>
   import("./pages/Settings/CurrencySettings/CurrencySettings")
 );
 const EditProfile = lazy(() => import("./pages/Profile/EditProfile"));
+const Login = lazy(() => import("./pages/Login/Login"));
 
 const App = () => {
   return (
     <Suspense>
       <Routes>
+        <Route path="/login" element={<Login />} />
         <Route path="/" element={<Layout />}>
           <Route index element={<Dashboard />} />
           <Route path="quotations" element={<Quotation />} />
