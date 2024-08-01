@@ -1,10 +1,12 @@
+import { lazy } from "react";
+
 // general components
-import CustomButton from "../../components/CustomButton";
-import BackButton from "../../components/BackButton";
+const CustomButton = lazy(() => import("../../components/CustomButton"));
+const BackButton = lazy(() => import("../../components/BackButton"));
 
 // react icons
-import { FaPlus } from "react-icons/fa6";
-import { SlReload } from "react-icons/sl";
+import { FaPlus } from "../../Utils/reactIconsExports";
+import { SlReload } from "../../Utils/reactIconsExports";
 
 import CurrencyDrawer from "../../components/CurrencyDrawer";
 

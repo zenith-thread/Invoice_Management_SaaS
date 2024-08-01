@@ -1,12 +1,23 @@
+import { lazy } from "react";
+import { LazyLoadImage } from "react-lazy-load-image-component";
+
 // common components
-import AvatarMenu from "./AvatarMenu";
+const AvatarMenu = lazy(() => import("./AvatarMenu"));
+
+import DuroodShareefCounter from "./DuroodShareefCounter";
 
 const Navbar = () => {
   return (
-    <div className="flex justify-between items-center p-4">
+    <div className="flex justify-between items-center px-4 pt-4">
       {/* LOGO */}
-      <h1 className="text-[32px]">SCM SOLUTIONS</h1>
-
+      <div className="h-[80px] ml-[23px]">
+        <LazyLoadImage
+          src="src\assets\img\logo.png"
+          alt="Logo"
+          className="w-full h-full"
+        />
+      </div>
+      <DuroodShareefCounter />
       {/* Avatar Menu  */}
       <AvatarMenu />
     </div>

@@ -1,7 +1,9 @@
-import CustomButton from "../../../components/CustomButton";
-import BackButton from "../../../components/BackButton";
+import { lazy } from "react";
 
-import { FiUpload } from "react-icons/fi";
+const CustomButton = lazy(() => import("../../../components/CustomButton"));
+const BackButton = lazy(() => import("../../../components/BackButton"));
+
+import { FiUpload } from "../../../Utils/reactIconsExports";
 
 const CompanyLogoSettings = () => {
   return (

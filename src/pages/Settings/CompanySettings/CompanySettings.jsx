@@ -1,7 +1,8 @@
-import CompanySettingsForm from "./CompanySettingsForm";
+import { lazy } from "react";
 
-import CustomButton from "../../../components/CustomButton";
-import BackButton from "../../../components/BackButton";
+const CompanySettingsForm = lazy(() => import("./CompanySettingsForm"));
+const CustomButton = lazy(() => import("../../../components/CustomButton"));
+const BackButton = lazy(() => import("../../../components/BackButton"));
 
 const CompanySettings = () => {
   return (

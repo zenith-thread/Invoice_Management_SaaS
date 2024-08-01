@@ -1,10 +1,12 @@
+import { lazy } from "react";
+
 import { motion } from "framer-motion";
 
-import { RiSuitcaseFill } from "react-icons/ri";
-import { BsPersonWorkspace } from "react-icons/bs";
-import { MdEmail } from "react-icons/md";
+import { RiSuitcaseFill } from "../../Utils/reactIconsExports";
+import { BsPersonWorkspace } from "../../Utils/reactIconsExports";
+import { MdEmail } from "../../Utils/reactIconsExports";
 
-import CustomButton from "../../components/CustomButton";
+const CustomButton = lazy(() => import("../../components/CustomButton"));
 
 const MainProfile = ({ renderEdit, renderUpdatePassword }) => {
   return (

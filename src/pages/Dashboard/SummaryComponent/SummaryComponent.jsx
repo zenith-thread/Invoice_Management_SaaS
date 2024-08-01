@@ -1,4 +1,8 @@
-import SummaryComponentItems from "../SummaryComponentItems/SummaryComponentItems";
+import { lazy } from "react";
+
+const SummaryComponentItems = lazy(() =>
+  import("../SummaryComponentItems/SummaryComponentItems")
+);
 
 const SummaryComponent = ({ componentTitle }) => {
   return (

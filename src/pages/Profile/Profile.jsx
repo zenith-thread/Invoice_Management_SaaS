@@ -1,8 +1,10 @@
+import { lazy } from "react";
+
 import { useState } from "react";
 
-import MainProfile from "./MainProfile";
-import EditProfile from "./EditProfile";
-import UpdatePassword from "./UpdatePassword";
+const MainProfile = lazy(() => import("./MainProfile"));
+const EditProfile = lazy(() => import("./EditProfile"));
+const UpdatePassword = lazy(() => import("./UpdatePassword"));
 
 const Profile = () => {
   const [isEdit, setIsEdit] = useState(false);

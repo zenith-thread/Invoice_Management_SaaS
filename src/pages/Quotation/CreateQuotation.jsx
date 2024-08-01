@@ -1,21 +1,15 @@
+import { lazy } from "react";
+
 // general components
-import CustomButton from "../../components/CustomButton";
-import BackButton from "../../components/BackButton";
+const CustomButton = lazy(() => import("../../components/CustomButton"));
+const BackButton = lazy(() => import("../../components/BackButton"));
 
 // react icons
-import { FaPlus } from "react-icons/fa6";
-import { ImCancelCircle } from "react-icons/im";
-import { FaRupeeSign } from "react-icons/fa6";
-import { FaDollarSign } from "react-icons/fa6";
-{
-  /* <FaDollarSign /> */
-}
-import { BsCurrencyPound } from "react-icons/bs";
-{
-  /* <BsCurrencyPound /> */
-}
-import { FaRegTrashCan } from "react-icons/fa6";
-import { AiOutlinePercentage } from "react-icons/ai";
+import { FaPlus } from "../../Utils/reactIconsExports";
+import { ImCancelCircle } from "../../Utils/reactIconsExports";
+import { FaRupeeSign } from "../../Utils/reactIconsExports";
+import { FaRegTrashCan } from "../../Utils/reactIconsExports";
+import { AiOutlinePercentage } from "../../Utils/reactIconsExports";
 
 const CreateQuotation = () => {
   return (

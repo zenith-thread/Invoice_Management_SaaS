@@ -1,10 +1,16 @@
+import { lazy } from "react";
+
 // Common Components
-import RecentData from "../../components/RecentData";
+const RecentData = lazy(() => import("../../components/RecentData"));
 
 // Dashboard Components
-import DashboardTopCard from "./DashboardComponents/DashboardTopCard";
-import SummaryComponent from "./SummaryComponent/SummaryComponent";
-import NewCustomerData from "./NewCustomerData/NewCustomerData";
+const DashboardTopCard = lazy(() =>
+  import("./DashboardComponents/DashboardTopCard")
+);
+const SummaryComponent = lazy(() =>
+  import("./SummaryComponent/SummaryComponent")
+);
+const NewCustomerData = lazy(() => import("./NewCustomerData/NewCustomerData"));
 
 const Dashboard = () => {
   const newClientPercentage = 70;

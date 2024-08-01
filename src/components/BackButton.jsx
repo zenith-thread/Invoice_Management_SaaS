@@ -1,6 +1,6 @@
 import { useNavigate } from "react-router-dom";
 
-import { MdOutlineArrowBackIos } from "react-icons/md";
+import { MdOutlineArrowBackIos } from "../Utils/reactIconsExports";
 
 const BackButton = ({ customOnClick }) => {
   const navigate = useNavigate();

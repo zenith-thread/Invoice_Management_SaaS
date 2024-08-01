@@ -1,6 +1,8 @@
+import { lazy } from "react";
+
 import { Outlet } from "react-router-dom";
 
-import SettingsSidebar from "../../components/SettingsSidebar";
+const SettingsSidebar = lazy(() => import("../../components/SettingsSidebar"));
 
 const Settings = () => {
   return (

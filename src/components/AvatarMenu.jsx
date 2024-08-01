@@ -1,3 +1,4 @@
+import { LazyLoadImage } from "react-lazy-load-image-component";
 import { NavLink } from "react-router-dom";
 
 // chakraUI components
@@ -9,12 +10,12 @@ import {
   MenuGroup,
   MenuDivider,
   Avatar,
-} from "@chakra-ui/react";
+} from "../Utils/chakraUIExports";
 
 // react icons
-import { BsPerson } from "react-icons/bs";
-import { IoSettingsOutline } from "react-icons/io5";
-import { RiLogoutCircleRLine } from "react-icons/ri";
+import { BsPerson } from "../Utils/reactIconsExports";
+import { IoSettingsOutline } from "../Utils/reactIconsExports";
+import { RiLogoutCircleRLine } from "../Utils/reactIconsExports";
 
 const AvatarMenu = () => {
   return (
@@ -24,6 +25,7 @@ const AvatarMenu = () => {
           name="Dan Abrahmov"
           src="https://bit.ly/dan-abramov"
           className="shadow-md shadow-blue-100"
+          LazyLoadImage
         />
       </MenuButton>
       <MenuList className="px-1">

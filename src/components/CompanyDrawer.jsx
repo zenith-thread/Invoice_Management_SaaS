@@ -11,11 +11,9 @@ import {
   Button,
   Box,
   FormLabel,
-  Select,
   Input,
-  Textarea,
   useDisclosure,
-} from "@chakra-ui/react";
+} from "../Utils/chakraUIExports";
 
 import { useRef } from "react";
 

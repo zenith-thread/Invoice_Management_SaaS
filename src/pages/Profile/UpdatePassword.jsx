@@ -1,8 +1,7 @@
-import BackButton from "../../components/BackButton";
-import CustomButton from "../../components/CustomButton";
+import { lazy } from "react";
 
-// react icons
-import { MdOutlineFileUpload } from "react-icons/md";
+const CustomButton = lazy(() => import("../../components/CustomButton"));
+const BackButton = lazy(() => import("../../components/BackButton"));
 
 const UpdatePassword = ({ renderUpdatePassword }) => {
   return (
@@ -31,7 +30,7 @@ const UpdatePassword = ({ renderUpdatePassword }) => {
             <input
               className="px-2 py-[5px] w-[450px] outline-none rounded-lg border border-gray-300 hover:border-primaryBtn transition delay-75 ease-in-out focus:border-primaryBtn shadow-sm"
               type="password"
-              value="Ahmed"
+              value=""
             />
           </div>
 
@@ -42,7 +41,7 @@ const UpdatePassword = ({ renderUpdatePassword }) => {
             <input
               className="px-2 py-[5px] w-[450px] outline-none rounded-lg border border-gray-300 hover:border-primaryBtn transition delay-75 ease-in-out focus:border-primaryBtn shadow-sm"
               type="password"
-              value="Raza"
+              value=""
             />
           </div>
         </form>

@@ -1,5 +1,7 @@
-import CustomButton from "../../../components/CustomButton";
-import BackButton from "../../../components/BackButton";
+import { lazy } from "react";
+
+const CustomButton = lazy(() => import("../../../components/CustomButton"));
+const BackButton = lazy(() => import("../../../components/BackButton"));
 
 import { useNavigate } from "react-router-dom";
 

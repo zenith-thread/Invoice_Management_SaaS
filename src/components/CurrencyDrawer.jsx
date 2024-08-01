@@ -15,7 +15,7 @@ import {
   Input,
   useDisclosure,
   Switch,
-} from "@chakra-ui/react";
+} from "../Utils/chakraUIExports";
 
 import { useRef } from "react";
 

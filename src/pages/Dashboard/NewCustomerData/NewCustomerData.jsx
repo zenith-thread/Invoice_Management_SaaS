@@ -1,5 +1,8 @@
 // chakraUI components
-import { CircularProgress, CircularProgressLabel } from "@chakra-ui/react";
+import {
+  CircularProgress,
+  CircularProgressLabel,
+} from "../../../Utils/chakraUIExports";
 
 const NewCustomerData = ({ newClientPercentage, activeClientPercentage }) => {
   return (

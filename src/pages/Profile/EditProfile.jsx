@@ -1,8 +1,10 @@
-import BackButton from "../../components/BackButton";
-import CustomButton from "../../components/CustomButton";
+import { lazy } from "react";
+
+const CustomButton = lazy(() => import("../../components/CustomButton"));
+const BackButton = lazy(() => import("../../components/BackButton"));
 
 // react icons
-import { MdOutlineFileUpload } from "react-icons/md";
+import { MdOutlineFileUpload } from "../../Utils/reactIconsExports";
 
 const EditProfile = ({ renderEdit }) => {
   return (
