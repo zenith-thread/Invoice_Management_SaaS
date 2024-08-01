@@ -3,9 +3,8 @@ const LoginDecor = () => {
     <div className="flex flex-col  justify-center items-center w-[50vw] bg-gray-100 text-gray-600 tracking-wide">
       <div className="w-fit mb-[100px]">
         <img
-          src="src\assets\img\logo.png"
+          src="/assets/img/logo.png"
           alt="Company Logo"
-          loading="lazy"
           height="80px"
           className="ml-[22%] mb-[10px]"
         />

@@ -1,3 +1,5 @@
+import { useRef, lazy } from "react";
+
 // Chakra UI components
 import {
   Drawer,
@@ -18,7 +20,8 @@ import {
   Switch,
 } from "../Utils/chakraUIExports";
 
-import { useRef } from "react";
+// custom icons
+const Plus = lazy(() => import("../customFavIcons/Plus"));
 
 const CategoryDrawer = ({ Icon, label }) => {
   const { isOpen, onOpen, onClose } = useDisclosure();
@@ -31,12 +34,13 @@ const CategoryDrawer = ({ Icon, label }) => {
         onClick={onOpen}
         className="max-h-[33px] transition delay-74 ease-in-out shadow-sm"
         textColor="white"
-        background="#3B65E3"
+        background="#1640D6"
         _hover={{
           background: "#6284E9",
         }}
         fontSize="sm"
       >
+        <Plus classnames="text-2xl font-semibold mb-[7px] pr-2" />
         Add New {label} Category
       </Button>
       <Drawer

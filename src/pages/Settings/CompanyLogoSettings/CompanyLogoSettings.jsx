@@ -3,13 +3,11 @@ import { lazy } from "react";
 const CustomButton = lazy(() => import("../../../components/CustomButton"));
 const BackButton = lazy(() => import("../../../components/BackButton"));
 
-import { FiUpload } from "../../../Utils/reactIconsExports";
-
 const CompanyLogoSettings = () => {
   return (
     <div className="flex flex-col bg-white ml-[110px] w-[89%] mt-[17px] border-white rounded-md transition ease-in-out delay-150 shadow-2xl hover:shadow-xl shadow-hoverShadow hover:shadow-hoverShadow">
-      <div className="flex gap-2 px-[40px] py-[60px] text-primaryText font-semibold text-xl">
-        <div className="mt-[-1px]">
+      <div className="flex  items-center gap-2 px-[40px] py-[60px] text-primaryText font-semibold text-xl">
+        <div>
           <BackButton />
         </div>
         <h2>General Settings</h2>
@@ -24,9 +22,7 @@ const CompanyLogoSettings = () => {
 
       <div className="flex items-center py-[15px] px-[110px] pt-[20px] pb-[50px] text-sm font-semibold">
         <label className="w-[300px]">Logo:</label>
-        <CustomButton icon={<FiUpload />} inverted>
-          Click To Upload
-        </CustomButton>
+        <CustomButton inverted>Click To Upload</CustomButton>
       </div>
 
       <div className="border-b w-[93%] mb-[30px] mt-[10px] border-primaryBorder self-center" />

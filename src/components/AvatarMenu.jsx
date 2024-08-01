@@ -11,11 +11,6 @@ import {
   Avatar,
 } from "../Utils/chakraUIExports";
 
-// react icons
-import { BsPerson } from "../Utils/reactIconsExports";
-import { IoSettingsOutline } from "../Utils/reactIconsExports";
-import { RiLogoutCircleRLine } from "../Utils/reactIconsExports";
-
 const AvatarMenu = () => {
   return (
     <Menu>
@@ -24,7 +19,7 @@ const AvatarMenu = () => {
           name="Dan Abrahmov"
           src="https://bit.ly/dan-abramov"
           className="shadow-md shadow-blue-100"
-          LazyLoadImage
+          loading="lazy"
         />
       </MenuButton>
       <MenuList className="px-1">
@@ -57,7 +52,7 @@ const AvatarMenu = () => {
           <NavLink to="/profile">
             <MenuItem>
               <div className="flex items-center gap-2 text-sm font-semibold py-1">
-                <BsPerson className="font-semibold" />
+                {/* <BsPerson className="font-semibold" /> */}
                 <p>Profile Settings</p>
               </div>
             </MenuItem>
@@ -65,7 +60,7 @@ const AvatarMenu = () => {
           <NavLink to="/settings">
             <MenuItem>
               <div className="flex items-center gap-2 text-sm font-semibold py-1">
-                <IoSettingsOutline className="font-semibold" />
+                {/* <IoSettingsOutline className="font-semibold" /> */}
                 <p>Settings</p>
               </div>
             </MenuItem>
@@ -75,7 +70,7 @@ const AvatarMenu = () => {
         <NavLink>
           <MenuItem>
             <div className="flex items-center gap-2 text-sm font-semibold py-1">
-              <RiLogoutCircleRLine className="font-semibold" />
+              {/* <RiLogoutCircleRLine className="font-semibold" /> */}
               <p>Logout</p>
             </div>
           </MenuItem>

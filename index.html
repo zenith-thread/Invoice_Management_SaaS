@@ -4,19 +4,27 @@
     <meta charset="UTF-8" />
 
     <link rel="icon" type="image/svg+xml" href="/vite.svg" />
-
-    <!-- Preloading the profile image -->
     <link
-      rel="preload"
-      fetchpriority="high"
-      as="image"
-      href="https://media.sproutsocial.com/uploads/2022/06/profile-picture.jpeg"
+      rel="stylesheet"
+      fetchpriority="low"
+      async
+      defer
+      href="/src/index.css"
     />
+    <!-- Preloading the profile image -->
+    <link async defer rel="preload" as="image" href="/assets/img/logo.png" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Vite + React</title>
+    <style>
+      * {
+        padding: 0;
+        margin: 0;
+        box-sizing: border-box;
+      }
+    </style>
   </head>
   <body>
     <div id="root"></div>
-    <script type="module" src="/src/main.jsx"></script>
+    <script type="module" src="/src/main.jsx" defer async></script>
   </body>
 </html>

@@ -4,7 +4,7 @@ const CustomButton = lazy(() => import("../../components/CustomButton"));
 const BackButton = lazy(() => import("../../components/BackButton"));
 
 // react icons
-import { MdOutlineFileUpload } from "../../Utils/reactIconsExports";
+// import { MdOutlineFileUpload } from "../../Utils/reactIconsExports";
 
 const EditProfile = ({ renderEdit }) => {
   return (
@@ -32,7 +32,7 @@ const EditProfile = ({ renderEdit }) => {
         />
         <div className="absolute inset-0 flex items-center justify-center text-white font-bold text-sm opacity-0 group-hover:opacity-100 group-hover:cursor-pointer transition duration-300">
           <div className="flex gap-2">
-            <MdOutlineFileUpload className="text-xl" />
+            {/* <MdOutlineFileUpload className="text-xl" /> */}
             <p>Upload</p>
           </div>
         </div>

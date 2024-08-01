@@ -16,8 +16,8 @@ const CurrencySettings = () => {
 
   return (
     <div className="flex flex-col bg-white ml-[110px] w-[89%] mt-[17px] border-white rounded-md transition ease-in-out delay-150 shadow-2xl hover:shadow-xl shadow-hoverShadow hover:shadow-hoverShadow">
-      <div className="flex gap-2 px-[40px] py-[60px] text-primaryText font-semibold text-xl">
-        <div className="mt-[-1px]">
+      <div className="flex items-center gap-2 px-[40px] py-[60px] text-primaryText font-semibold text-xl">
+        <div>
           <BackButton />
         </div>
         <h2>Money Format Settings</h2>

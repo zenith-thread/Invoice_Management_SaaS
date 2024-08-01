@@ -1,26 +1,15 @@
 import { lazy } from "react";
 
-export const Menu = lazy(() =>
-  import("@chakra-ui/react").then((module) => ({ default: module.Menu }))
-);
-export const MenuButton = lazy(() =>
-  import("@chakra-ui/react").then((module) => ({ default: module.MenuButton }))
-);
-export const MenuList = lazy(() =>
-  import("@chakra-ui/react").then((module) => ({ default: module.MenuList }))
-);
-export const MenuItem = lazy(() =>
-  import("@chakra-ui/react").then((module) => ({ default: module.MenuItem }))
-);
-export const MenuGroup = lazy(() =>
-  import("@chakra-ui/react").then((module) => ({ default: module.MenuGroup }))
-);
-export const MenuDivider = lazy(() =>
-  import("@chakra-ui/react").then((module) => ({ default: module.MenuDivider }))
-);
-export const Avatar = lazy(() =>
-  import("@chakra-ui/react").then((module) => ({ default: module.Avatar }))
-);
+export {
+  Menu,
+  MenuButton,
+  MenuList,
+  MenuItem,
+  MenuGroup,
+  MenuDivider,
+  Avatar,
+} from "@chakra-ui/react";
+
 export const Drawer = lazy(() =>
   import("@chakra-ui/react").then((module) => ({ default: module.Drawer }))
 );

@@ -6,7 +6,9 @@ import Dashboard from "./pages/Dashboard/Dashboard";
 
 // Lazy load pages
 const Quotation = lazy(() => import("./pages/Quotation/Quotation"));
-const CreateQuotation = lazy(() => import("./pages/Quotation/CreateQuotation"));
+const CreateQuotation = lazy(() =>
+  import("./pages/Quotation/CreateQuotation/CreateQuotation")
+);
 const Invoices = lazy(() => import("./pages/Invoices/Invoices"));
 const Delivery_Challan = lazy(() =>
   import("./pages/Delivery_Challan/Delivery_Challan")
