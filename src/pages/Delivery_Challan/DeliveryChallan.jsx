@@ -2,21 +2,18 @@ import { lazy } from "react";
 
 // common components
 const PagesHeaders = lazy(() => import("../../components/PagesHeaders"));
-
-// Invoice components
 const TableHeaders = lazy(() => import("../../components/TableHeaders"));
 
-// headers
-import { invoiceHeaders } from "./InvoiceHeaders";
+import { deliverChallanHeaders } from "./deliverChallanHeaders";
 
-const Invoices = () => {
+const DeliveryChallan = () => {
   return (
     <div className="relative overflow-x-auto max-w-[1535px] flex flex-col col-span-2 h-[768px] py-4 ml-[10px] mt-[20px] bg-white border border-white rounded-md transition ease-in-out delay-150 shadow-2xl hover:shadow-xl shadow-hoverShadow hover:shadow-hoverShadow">
-      <PagesHeaders heading="Invoices" />
-      <table className="border-separate border-spacing-0">
+      <PagesHeaders heading="Delivery Challan List" />
+      <table className="mx-4 border-b border-[#F0F0F0] mb-[75px] ">
         <thead>
           <tr>
-            {invoiceHeaders.map(({ classnames, columnName }, idx) =>
+            {deliverChallanHeaders.map(({ classnames, columnName }, idx) =>
               classnames ? (
                 <TableHeaders
                   key={idx}
@@ -29,10 +26,9 @@ const Invoices = () => {
             )}
           </tr>
         </thead>
-        <tbody>{/* Your table rows go here */}</tbody>
       </table>
     </div>
   );
 };
 
-export default Invoices;
+export default DeliveryChallan;

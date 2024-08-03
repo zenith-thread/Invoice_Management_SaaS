@@ -10,8 +10,8 @@ const CreateQuotation = lazy(() =>
   import("./pages/Quotation/CreateQuotation/CreateQuotation")
 );
 const Invoices = lazy(() => import("./pages/Invoices/Invoices"));
-const Delivery_Challan = lazy(() =>
-  import("./pages/Delivery_Challan/Delivery_Challan")
+const DeliveryChallan = lazy(() =>
+  import("./pages/Delivery_Challan/DeliveryChallan")
 );
 const Products = lazy(() => import("./pages/Products/Products"));
 const Products_Categories = lazy(() =>
@@ -48,7 +48,7 @@ const App = () => {
           <Route path="quotations" element={<Quotation />} />
           <Route path="quotations/create" element={<CreateQuotation />} />
           <Route path="invoices" element={<Invoices />} />
-          <Route path="delivery_challan" element={<Delivery_Challan />} />
+          <Route path="delivery_challan" element={<DeliveryChallan />} />
           <Route path="products" element={<Products />} />
           <Route
             path="products_categories"

@@ -1,7 +1,11 @@
 import { lazy } from "react";
 
+// commong components
 const PagesHeaders = lazy(() => import("../../components/PagesHeaders"));
 import CurrencyDrawer from "../../components/CurrencyDrawer";
+const TableHeaders = lazy(() => import("../../components/TableHeaders"));
+
+import { currencyHeaders } from "./currencyHeaders";
 
 const Currencies = () => {
   return (
@@ -13,31 +17,17 @@ const Currencies = () => {
       <table className="mx-4 border-b border-[#F0F0F0] mb-[75px] ">
         <thead>
           <tr>
-            <th className="bg-[#FAFAFA] w-[12%] pt-3 pb-5 px-4 border-r border-[#F0F0F0] rounded text-left text-sm font-semibold text-gray-600">
-              Currency Name
-            </th>
-            <th className="bg-[#FAFAFA] w-[12%] pt-3 pb-5 px-4 border-r border-[#F0F0F0] rounded text-left text-sm font-semibold text-gray-600">
-              Currency Code
-            </th>
-            <th className="bg-[#FAFAFA] w-[12%] pt-3 pb-5 px-4 border-r border-[#F0F0F0] rounded text-left text-sm font-semibold text-gray-600">
-              Currency Symbol
-            </th>
-            <th className="bg-[#FAFAFA] w-[12%] pt-3 pb-5 px-4 border-r border-[#F0F0F0] rounded text-left text-sm font-semibold text-gray-600">
-              Currency Position
-            </th>
-            <th className="bg-[#FAFAFA] w-[12%] pt-3 pb-5 px-4 border-r border-[#F0F0F0] rounded text-left text-sm font-semibold text-gray-600">
-              Decimal Separator
-            </th>
-            <th className="bg-[#FAFAFA] w-[12%] pt-3 pb-5 px-4 border-r border-[#F0F0F0] rounded text-left text-sm font-semibold text-gray-600">
-              Thousand Separator
-            </th>
-            <th className="bg-[#FAFAFA] w-[12%] pt-3 pb-5 px-4 border-r border-[#F0F0F0] rounded text-left text-sm font-semibold text-gray-600">
-              Cent Precision
-            </th>
-            <th className="bg-[#FAFAFA] w-[12%] pt-3 pb-5 px-4 border-r border-[#F0F0F0] rounded text-left text-sm font-semibold text-gray-600">
-              Enabled
-            </th>
-            <th className="bg-[#FAFAFA] w-[4%] pt-3 pb-5 px-4 border-r border-[#F0F0F0] rounded text-left text-sm font-semibold text-gray-600"></th>
+            {currencyHeaders.map(({ classnames, columnName }, idx) =>
+              classnames ? (
+                <TableHeaders
+                  key={idx}
+                  classnames={classnames}
+                  columnName={columnName}
+                />
+              ) : (
+                <TableHeaders key={idx} columnName={columnName} />
+              )
+            )}
           </tr>
         </thead>
       </table>

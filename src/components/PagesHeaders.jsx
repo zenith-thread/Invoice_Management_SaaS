@@ -10,7 +10,7 @@ const Plus = lazy(() => import("../customFavIcons/Plus"));
 
 const PagesHeaders = ({ heading, linkAddress, drawer }) => {
   return (
-    <div className="flex justify-between items-center mb-2 py-8 px-4 pr-4">
+    <div className="sticky left-0 flex justify-between items-center mb-2 py-8 px-4 pr-4">
       <div className="flex justfiy-center items-center gap-2">
         <BackButton />
         <p className="text-primaryText font-bold text-[18px]">{heading}</p>

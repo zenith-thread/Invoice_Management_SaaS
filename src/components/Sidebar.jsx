@@ -5,17 +5,17 @@ const Sidebar = () => {
     <div className="flex flex-col w-[300px] p-5 mt-[20px] bg-transparent">
       <Sidebarfields LinkName="Dashboard" linkAddress="/" />
       <Sidebarfields LinkName="Quotations" linkAddress="/quotations" />
-      <Sidebarfields LinkName="Invoices" linkAddress="/invoices" />
       <Sidebarfields
         LinkName="Delivery Challan"
         linkAddress="/delivery_challan"
       />
+      <Sidebarfields LinkName="Invoices" linkAddress="/invoices" />
       <Sidebarfields LinkName="Products" linkAddress="/products" />
       <Sidebarfields
         LinkName="Products categories"
         linkAddress="/products_categories"
       />
-      <Sidebarfields LinkName="Companies" linkAddress="/companies" />
+      <Sidebarfields LinkName="Customers" linkAddress="/companies" />
       <Sidebarfields LinkName="Expenses" linkAddress="/expenses" />
       <Sidebarfields
         LinkName="Expenses categories"

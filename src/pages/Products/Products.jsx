@@ -1,7 +1,11 @@
 import { lazy } from "react";
 
+// common components
 const ProductDrawer = lazy(() => import("../../components/ProductDrawer"));
 const PagesHeaders = lazy(() => import("../../components/PagesHeaders"));
+const TableHeaders = lazy(() => import("../../components/TableHeaders"));
+
+import { productsHeaders } from "./productsHeaders";
 
 const Products = () => {
   return (
@@ -10,25 +14,20 @@ const Products = () => {
         heading="Products List"
         drawer={<ProductDrawer label="Add New Product" />}
       />
-      <table className="mx-4 border-b border-[#F0F0F0] mb-[75px] ">
+      <table className="w-full border-separate border-spacing-0">
         <thead>
           <tr>
-            <th className="bg-[#FAFAFA] w-[13.75%] pt-3 pb-5 px-4 border-r border-[#F0F0F0] rounded text-left text-sm font-semibold text-gray-600">
-              Ref
-            </th>
-            <th className="bg-[#FAFAFA] w-[13.75%] pt-3 pb-5 px-4 border-r border-[#F0F0F0] rounded text-left text-sm font-semibold text-gray-600">
-              Name
-            </th>
-            <th className="bg-[#FAFAFA] w-[35%] pt-3 pb-5 px-4 border-r border-[#F0F0F0] rounded text-left text-sm font-semibold text-gray-600">
-              Description
-            </th>
-            <th className="bg-[#FAFAFA] w-[13.75%] pt-3 pb-5 px-4 border-r border-[#F0F0F0] rounded text-left text-sm font-semibold text-gray-600">
-              Product Category
-            </th>
-            <th className="bg-[#FAFAFA] w-[13.75%] pt-3 pb-5 px-4 border-r border-[#F0F0F0] rounded text-left text-sm font-semibold text-gray-600">
-              Currency
-            </th>
-            <th className="bg-[#FAFAFA] w-[10%] pt-3 pb-5 px-4 border-r border-[#F0F0F0] rounded text-left text-sm font-semibold text-gray-600"></th>
+            {productsHeaders.map(({ classnames, columnName }, idx) =>
+              classnames ? (
+                <TableHeaders
+                  key={idx}
+                  classnames={classnames}
+                  columnName={columnName}
+                />
+              ) : (
+                <TableHeaders key={idx} columnName={columnName} />
+              )
+            )}
           </tr>
         </thead>
       </table>

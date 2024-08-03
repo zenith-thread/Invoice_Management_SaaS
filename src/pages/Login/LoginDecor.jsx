@@ -30,7 +30,7 @@ const LoginDecor = () => {
             </p>
           </div>
           <p className="text-sm font-semibold ml-[27px] mt-[10px]">
-            It Brings Together Your Invoice Clients And Leads
+            It Brings Together Your Invoice, Clients And Leads
           </p>
         </div>
 

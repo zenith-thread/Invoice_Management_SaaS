@@ -1,8 +1,11 @@
 import { lazy } from "react";
 
+// common components
 const PagesHeaders = lazy(() => import("../../components/PagesHeaders"));
-
 import CompanyDrawer from "../../components/CompanyDrawer";
+const TableHeaders = lazy(() => import("../../components/TableHeaders"));
+
+import { companyHeaders } from "./companyHeaders";
 
 const Companies = () => {
   return (
@@ -14,31 +17,17 @@ const Companies = () => {
       <table className="mx-4 border-b border-[#F0F0F0] mb-[75px] ">
         <thead>
           <tr>
-            <th className="bg-[#FAFAFA] w-[8%]  pt-3 pb-5 px-4 border-r border-[#F0F0F0] rounded text-left text-sm font-semibold text-gray-600">
-              Ref
-            </th>
-            <th className="bg-[#FAFAFA] w-[12.5%]  pt-3 pb-5 px-4 border-r border-[#F0F0F0] rounded text-left text-sm font-semibold text-gray-600">
-              Name
-            </th>
-            <th className="bg-[#FAFAFA] w-[9%]  pt-3 pb-5 px-4 border-r border-[#F0F0F0] rounded text-left text-sm font-semibold text-gray-600">
-              Country
-            </th>
-            <th className="bg-[#FAFAFA] w-[9%]  pt-3 pb-5 px-4 border-r border-[#F0F0F0] rounded text-left text-sm font-semibold text-gray-600">
-              City
-            </th>
-            <th className="bg-[#FAFAFA] w-[25%]  pt-3 pb-5 px-4 border-r border-[#F0F0F0] rounded text-left text-sm font-semibold text-gray-600">
-              Address
-            </th>
-            <th className="bg-[#FAFAFA] w-[12.5%]  pt-3 pb-5 px-4 border-r border-[#F0F0F0] rounded text-left text-sm font-semibold text-gray-600">
-              Phone #
-            </th>
-            <th className="bg-[#FAFAFA] w-[10%]  pt-3 pb-5 px-4 border-r border-[#F0F0F0] rounded text-left text-sm font-semibold text-gray-600">
-              Email
-            </th>
-            <th className="bg-[#FAFAFA] w-[10%]  pt-3 pb-5 px-4 border-r border-[#F0F0F0] rounded text-left text-sm font-semibold text-gray-600">
-              Website
-            </th>
-            <th className="bg-[#FAFAFA] w-[4%] pt-3 pb-5 px-4 border-r border-[#F0F0F0] rounded text-left text-sm font-semibold text-gray-600"></th>
+            {companyHeaders.map(({ classnames, columnName }, idx) =>
+              classnames ? (
+                <TableHeaders
+                  key={idx}
+                  classnames={classnames}
+                  columnName={columnName}
+                />
+              ) : (
+                <TableHeaders key={idx} columnName={columnName} />
+              )
+            )}
           </tr>
         </thead>
       </table>
